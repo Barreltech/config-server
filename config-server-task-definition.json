@@ -1,5 +1,5 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:eu-north-1:702653091650:task-definition/configuration-server:2",
+  "taskDefinitionArn": "arn:aws:ecs:eu-north-1:702653091650:task-definition/config-server-task:1",
   "containerDefinitions": [
     {
       "name": "config-server",
@@ -7,7 +7,7 @@
       "cpu": 0,
       "portMappings": [
         {
-          "name": "config-server-8081-tcp",
+          "name": "config-server-8088-tcp",
           "containerPort": 8088,
           "hostPort": 0,
           "protocol": "tcp",
@@ -27,16 +27,15 @@
           "max-buffer-size": "25m",
           "awslogs-region": "eu-north-1",
           "awslogs-stream-prefix": "ecs"
-        },
-        "secretOptions": []
+        }
       },
       "systemControls": []
     }
   ],
-  "family": "new-powerline-task",
+  "family": "config-server-task",
   "taskRoleArn": "arn:aws:iam::702653091650:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::702653091650:role/ecsTaskExecutionRole",
-  "revision": 3,
+  "revision": 1,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -67,11 +66,10 @@
   ],
   "placementConstraints": [],
   "compatibilities": [
-    "EC2",
-    "FARGATE"
+    "EC2"
   ],
   "requiresCompatibilities": [
-    "FARGATE"
+    "EC2"
   ],
   "cpu": "1024",
   "memory": "256",
@@ -79,7 +77,8 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2024-12-08T18:22:37.987Z",
+  "registeredAt": "2024-12-27T22:10:21.740Z",
   "registeredBy": "arn:aws:iam::702653091650:root",
+  "enableFaultInjection": false,
   "tags": []
 }
