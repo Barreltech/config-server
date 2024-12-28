@@ -4,5 +4,5 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://powerline-1-load-balancer-932684365.eu-north-1.elb.amazonaws.com:85
+      defaultZone: http://powerline-1-load-balancer-932684365.eu-north-1.elb.amazonaws.com:94
 

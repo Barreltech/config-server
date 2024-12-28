@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    active: na
+    active: native
 
 logging:
   pattern:

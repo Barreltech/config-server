@@ -1,9 +1,14 @@
 server:
   port: 8088
 
-spring:
+
+  config:
+    import:
+      - "application_prod.yml"
+      - "application_dev.yml"
   profiles:
-    active: native
+    active:
+      - "prod"
 
 logging:
   pattern:
