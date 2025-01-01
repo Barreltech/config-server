@@ -16,7 +16,7 @@ spring:
           clone-on-start: true
           force-pull: true
           username: barreltechlimited@gmail.com
-          password: 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
+          password: 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
 
 server:
   port: 8088
