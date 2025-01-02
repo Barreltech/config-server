@@ -2,7 +2,7 @@
   "taskDefinitionArn": "arn:aws:ecs:eu-north-1:702653091650:task-definition/config:2",
   "containerDefinitions": [
     {
-      "name": "config",
+      "name": "config-real",
       "image": "061039802493.dkr.ecr.eu-north-1.amazonaws.com/config-server",
       "cpu": 0,
       "portMappings": [
