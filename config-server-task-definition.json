@@ -8,7 +8,7 @@
       "portMappings": [
         {
           "name": "config-8088-tcp",
-          "containerPort": 8088,
+          "containerPort": 9090,
           "hostPort": 0,
           "protocol": "tcp",
           "appProtocol": "http"
