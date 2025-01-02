@@ -1,28 +1,44 @@
-spring:
-  application:
-    name: "config-server"
-
-  profiles:
-    active: git
-
-
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/Barreltech/configuration-server.git
-          default-label: main
-          timeout: 50
-          clone-on-start: true
-          force-pull: true
-##          username: barreltechlimited@gmail.com
-##          password: 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
-#          username: {github-username}
-#          password: {github-password}
+#spring:
+#  application:
+#    name: "config-server"
+#
+#  profiles:
+#    active: git
+#
+#
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/Barreltech/configuration-server.git
+#          default-label: main
+#          timeout: 50
+#          clone-on-start: true
+#          force-pull: true
+#          username: barreltechlimited@gmail.com
+#          password: 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
+##          username: {github-username}
+##          password: {github-password}
+#
+#server:
+#  port: 8088
+#
+#
+#logging:
+#  pattern:
+#    console: ${LOGPATTERN_CONSOLE:%blue(%d{YYYY:MM:dd:HH:mm:ss}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n}
 
 server:
   port: 8088
 
+spring:
+  profiles:
+    active: native
+
+
+#  config:
+#    activate:
+#      on-profile: "dev"
 
 logging:
   pattern:
