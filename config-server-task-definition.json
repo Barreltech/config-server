@@ -33,8 +33,8 @@
     }
   ],
   "family": "config-server-task",
-  "taskRoleArn": "arn:aws:iam::702653091650:role/ecsTaskExecutionRole",
-  "executionRoleArn": "arn:aws:iam::702653091650:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::061039802493:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::061039802493:role/ecsTaskExecutionRole",
   "revision": 1,
   "volumes": [],
   "status": "ACTIVE",
