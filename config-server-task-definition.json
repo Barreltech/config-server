@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "config-server",
-      "image": "702653091650.dkr.ecr.eu-north-1.amazonaws.com/config-server",
+      "image": "061039802493.dkr.ecr.eu-north-1.amazonaws.com/config-server",
       "cpu": 0,
       "portMappings": [
         {
@@ -77,7 +77,6 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2024-12-27T22:10:21.740Z",
-  "registeredBy": "arn:aws:iam::702653091650:root",
+
   "tags": []
 }

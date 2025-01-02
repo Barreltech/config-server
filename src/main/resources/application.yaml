@@ -10,13 +10,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Barreltech/config-server.git/
+          uri: https://github.com/Barreltech/configuration-server.git
           default-label: main
           timeout: 50
           clone-on-start: true
           force-pull: true
           username: barreltechlimited@gmail.com
-          password: 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
+          password: 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
 
 server:
   port: 8088

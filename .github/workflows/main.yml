@@ -55,6 +55,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: config-server-1
-          cluster: powerline-cluster
+          service: config-server
+          cluster: powerline
           wait-for-service-stability: true
